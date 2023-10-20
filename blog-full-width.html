@@ -1,0 +1,25 @@
+@@include('header.htm', {
+	"title": "Blogs"
+})
+
+@@include('blocks/navigation.htm', {"blog":"active", "blogFW":"active"})
+
+@@include('blocks/page-title.htm', {
+  "title": "Blogs",
+  "description": ""
+})
+
+
+<div class="page-wrapper">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				@@include('blocks/blog-posts.htm')
+			</div>
+		</div>
+	</div>
+</div>
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')
